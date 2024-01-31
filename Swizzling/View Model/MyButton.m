@@ -34,12 +34,12 @@
 }
 
 - (void)configureButton {
-  [self configureButton: [PrimaryButtonStyle class]];
+    [self configureButton: [PrimaryButtonStyle class]];
 }
 
 - (void)configureButton: (Class)style {
-  [self setTitleColor:[style color] forState:UIControlStateNormal];
-  [self setTitle:[style title] forState:UIControlStateNormal];
+    [self setTitleColor:[style color] forState:UIControlStateNormal];
+    [self setTitle:[style title] forState:UIControlStateNormal];
 }
 
 @end

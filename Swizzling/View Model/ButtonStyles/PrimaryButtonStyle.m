@@ -10,11 +10,11 @@
 @implementation PrimaryButtonStyle
 
 + (UIColor *)color {
-  return [UIColor redColor];
+    return [UIColor redColor];
 }
 
 + (NSString *)title {
-  return @"Style A";
+    return @"Style A";
 }
 
 @end

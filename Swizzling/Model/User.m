@@ -13,11 +13,11 @@
 
 @implementation User
 
-+ (BOOL)currentUserGroup{
++ (BOOL)isGroupB{
     static BOOL sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedInstance = arc4random_uniform(2) ? YES : NO;
+      sharedInstance = arc4random_uniform(2) ? YES : NO;
     });
     return sharedInstance;
 }

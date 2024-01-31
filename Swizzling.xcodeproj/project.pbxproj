@@ -15,11 +15,12 @@
 		A83364A62B69C06D00AEA068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83364A42B69C06D00AEA068 /* LaunchScreen.storyboard */; };
 		A83364A92B69C06D00AEA068 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A83364A82B69C06D00AEA068 /* main.m */; };
 		A83364B22B69C98200AEA068 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A83364B12B69C98200AEA068 /* User.m */; };
-		A83364B62B69D11300AEA068 /* MyButtonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A83364B52B69D11300AEA068 /* MyButtonStyle.m */; };
+		A83364B62B69D11300AEA068 /* ButtonStyleSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = A83364B52B69D11300AEA068 /* ButtonStyleSwizzler.m */; };
 		A83364B92B69DA6900AEA068 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A83364B82B69DA6900AEA068 /* MyButton.m */; };
 		A83364BD2B69F94400AEA068 /* PrimaryButtonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A83364BC2B69F94400AEA068 /* PrimaryButtonStyle.m */; };
 		A83364BF2B69F95800AEA068 /* ButtonStyleB.m in Sources */ = {isa = PBXBuildFile; fileRef = A83364BE2B69F95800AEA068 /* ButtonStyleB.m */; };
 		A83364C42B6A035400AEA068 /* ButtonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A83364C32B6A035400AEA068 /* ButtonStyle.m */; };
+		A83364C62B6A10CA00AEA068 /* ViewWillAppearLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A83364C52B6A10CA00AEA068 /* ViewWillAppearLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,7 @@
 		A83364A82B69C06D00AEA068 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A83364AF2B69C4BB00AEA068 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		A83364B12B69C98200AEA068 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		A83364B52B69D11300AEA068 /* MyButtonStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyButtonStyle.m; sourceTree = "<group>"; };
+		A83364B52B69D11300AEA068 /* ButtonStyleSwizzler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonStyleSwizzler.m; sourceTree = "<group>"; };
 		A83364B82B69DA6900AEA068 /* MyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		A83364BA2B69DA7A00AEA068 /* MyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		A83364BB2B69F92000AEA068 /* PrimaryButtonStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimaryButtonStyle.h; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		A83364C02B69F96800AEA068 /* ButtonStyleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonStyleB.h; sourceTree = "<group>"; };
 		A83364C22B6A033900AEA068 /* ButtonStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonStyle.h; sourceTree = "<group>"; };
 		A83364C32B6A035400AEA068 /* ButtonStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonStyle.m; sourceTree = "<group>"; };
+		A83364C52B6A10CA00AEA068 /* ViewWillAppearLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewWillAppearLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				A83364B32B69CA0600AEA068 /* Model */,
 				A83364B72B69DA3200AEA068 /* View Model */,
 				A83364B42B69D04700AEA068 /* AB Testing */,
+				A865BEED2B6A1BCE007A49CB /* Utilities */,
 				A833649F2B69C06A00AEA068 /* Main.storyboard */,
 				A83364A22B69C06D00AEA068 /* Assets.xcassets */,
 				A83364A42B69C06D00AEA068 /* LaunchScreen.storyboard */,
@@ -108,7 +111,7 @@
 		A83364B42B69D04700AEA068 /* AB Testing */ = {
 			isa = PBXGroup;
 			children = (
-				A83364B52B69D11300AEA068 /* MyButtonStyle.m */,
+				A83364B52B69D11300AEA068 /* ButtonStyleSwizzler.m */,
 			);
 			path = "AB Testing";
 			sourceTree = "<group>";
@@ -134,6 +137,14 @@
 				A83364BE2B69F95800AEA068 /* ButtonStyleB.m */,
 			);
 			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		A865BEED2B6A1BCE007A49CB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A83364C52B6A10CA00AEA068 /* ViewWillAppearLogger.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +224,10 @@
 				A83364BF2B69F95800AEA068 /* ButtonStyleB.m in Sources */,
 				A83364A92B69C06D00AEA068 /* main.m in Sources */,
 				A833649B2B69C06A00AEA068 /* SceneDelegate.m in Sources */,
-				A83364B62B69D11300AEA068 /* MyButtonStyle.m in Sources */,
+				A83364B62B69D11300AEA068 /* ButtonStyleSwizzler.m in Sources */,
 				A83364B92B69DA6900AEA068 /* MyButton.m in Sources */,
 				A83364BD2B69F94400AEA068 /* PrimaryButtonStyle.m in Sources */,
+				A83364C62B6A10CA00AEA068 /* ViewWillAppearLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,6 @@
 
 @interface User : NSObject
 
-+ (BOOL)currentUserGroup;
++ (BOOL)isGroupB;
 
 @end

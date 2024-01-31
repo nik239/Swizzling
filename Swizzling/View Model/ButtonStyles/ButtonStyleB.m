@@ -10,11 +10,11 @@
 @implementation ButtonStyleB
 
 + (UIColor *)color {
-  return [UIColor blueColor];
+    return [UIColor blueColor];
 }
 
 + (NSString *)title {
-  return @"Style B";
+    return @"Style B";
 }
 
 @end
