@@ -7,6 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SubscribeButton : UIButton
+@interface MyButton : UIButton
 
 @end
